@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        
+        /* whereabout of sandbox of our app
+         /Users/fkenji/Library/Developer/CoreSimulator/Devices/774F2183-44BD-415B-9DFB-D359C1E8E5DA/data/Containers/Data/Application/7AE54BA1-1E60-47C4-8CC0-B0C8D81D3D0E/Library/Preferences/com.fkeebie.Todoey.plist
+
+         */
+        
         return true
     }
 
@@ -25,8 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+       
+        print("applicationDidEnterBackground")
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -38,7 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
+        print("applicationWillTerminate")
+        
     }
 
 
