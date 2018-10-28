@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         
+        // print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         /* whereabout of sandbox of our app
          /Users/fkenji/Library/Developer/CoreSimulator/Devices/774F2183-44BD-415B-9DFB-D359C1E8E5DA/data/Containers/Data/Application/7AE54BA1-1E60-47C4-8CC0-B0C8D81D3D0E/Library/Preferences/com.fkeebie.Todoey.plist
 
